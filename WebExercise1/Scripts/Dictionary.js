@@ -89,11 +89,11 @@ function extractData(data, tagOutput) {
                         </div>`;
 
             htmlTag += `
-                            <div style="flex: 1; display: flex; flex-direction: row; margin:10px 10px 0 10px;">
+                            <div style="flex: 1; display: flex; flex-direction: row; margin:10px 10px 0 10px; word-break: break-all">
                                 <label style="flex: 0 0 150px; margin-bottom: 0;"><!-- filler --></label>
-                                <label style="flex: 1; margin-bottom: 0; padding: 5px; font-weight: bold; background-color: lightgray; border-top: 1px solid black; border-left: 1px solid black; border-radius: 5px 0 0 0;">Definitions</label>
-                                <label style="flex: 1; margin-bottom: 0; padding: 5px; font-weight: bold; background-color: lightgray; border-top: 1px solid black; border-left: 1px solid black;">Examples</label>
-                                <label style="flex: 1; margin-bottom: 0; padding: 5px; font-weight: bold; background-color: lightgray; border-top: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;  border-radius: 0 5px 0 0;">Synonyms</label>
+                                <label style="flex: 1; margin-bottom: 0; padding: 5px; font-weight: bold; background-color: lightgray; border-top: 1px solid black; border-left: 1px solid black; border-radius: 5px 0 0 0;" title="Definitions">Definitions</label>
+                                <label style="flex: 1; margin-bottom: 0; padding: 5px; font-weight: bold; background-color: lightgray; border-top: 1px solid black; border-left: 1px solid black;" title="Examples">Examples</label>
+                                <label style="flex: 1; margin-bottom: 0; padding: 5px; font-weight: bold; background-color: lightgray; border-top: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;  border-radius: 0 5px 0 0;" title="synonyms">Synonyms</label>
                             </div>`;
 
 
@@ -120,7 +120,7 @@ function extractData(data, tagOutput) {
                 }
 
                 htmlTag += `
-                            <div style = "flex: 1; display: flex; flex-direction: row; margin: 0 10px 0 10px;" >
+                            <div style = "flex: 1; display: flex; flex-direction: row; margin: 0 10px 0 10px; word-break: break-all;" >
                                 <label style="flex: 0 0 150px; margin-bottom: 0;"><!-- filler --></label>
                                 <label style="flex: 1; margin-bottom: 0; padding: 5px 5px 0 5px; font-weight: normal; border-top: 1px solid black; border-left: 1px solid black;">${definition}</label>
                                 <label style="flex: 1; margin-bottom: 0; padding: 5px 5px 0 5px; font-weight: normal; border-top: 1px solid black; border-left: 1px solid black;">${example}</label>
